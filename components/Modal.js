@@ -72,12 +72,12 @@ function Modaler(props) {
               <ModalBody><div className={modaler.modalContact}><span className={modaler.modalContactSpan} ><p><AiTwotonePhone/></p><p  onClick={copyNo}>
             <CopyToClipboard text={figure}
           onCopy={() => setcopied({copied: true})}>
-          <span>{contact.tel}</span>
+          <span>{contacts.tel}</span>
         </CopyToClipboard>
         
         </p> </span> <span className={modaler.modalContactSpan}><p><ImMail3/></p ><p onClick={copyEmail}>Send - <CopyToClipboard text={figure}
           onCopy={() => setCopiedEmail({copied: true})}>
-          <span> {contact.email}</span>
+          <span> {contacts.email}</span>
         </CopyToClipboard></p> </span> 
                   </div>  </ModalBody>
                   {copied ? <span style={{color: 'red'}}>Number has been copied, switch to the Dail pad and paste to make the order.</span> : null}
